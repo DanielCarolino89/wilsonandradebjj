@@ -1,0 +1,394 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+body {
+    background-image: url("../img/claro.jpg");
+    /* Caminho da sua imagem */
+    background-size: cover;
+    /* A imagem irá cobrir toda a tela */
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+    background-repeat: none;
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+
+.navbar {
+    background-color: rgba(211, 211, 211, 0.537);
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    bottom: 0;
+    padding: 50px 0;
+
+}
+
+#certificate {
+    width: 800px;
+    height: 563px;
+    text-align: center;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+h1 {
+    color: black;
+    text-shadow: 0px 2px 8px gray;
+    font-size: 3rem;
+}
+
+#studentName {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 220px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#beltImage {
+    width: 380px;
+    height: 30px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+#dateText {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 205px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.botao-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-gerar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f3d781;
+    border: #daa520 solid 2px;
+    color:#2b2d42 ;
+    text-align: center;
+    text-decoration: solid 2px black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-gerar:hover {
+    font-weight: bold;
+}
+
+.botao-link:hover {
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer {
+    background-color: rgba(211, 211, 211, 0.537);
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    bottom: 0;
+    box-shadow: 0px 0px 12px black;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: lightgreen;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.footer-icones {
+    gap: 10px;
+    color: #25D366;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.footer-icones:hover {
+    font-weight: bold;
+}
+
+
+.whats {
+    color: #25D366;
+    padding: 5px;
+}
+
+.mail {
+    color: #DB4437;
+    padding: 5px;
+}
+
+.linkdin {
+    color: #0e76a8;
+    padding: 5px;
+}
+
+.cadastro {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 5px black;
+    padding: 30px;
+    width: 780px;
+    background-color: rgba(211, 211, 211, 0.537);
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px black;
+}
+
+.cadastro-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    margin: 20px 0;
+
+}
+
+label {
+    color: black;
+    font-weight: bold;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+input,
+select {
+    font-weight: bold;
+    background-color: white;
+    border-radius: 6px;
+    border-bottom-color: black;
+    border-bottom-width: 0.8px;
+    color: rgb(33, 37, 41);
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.list {
+    color: white;
+    font-size: 50px;
+}
+
+.img-amostra {
+    width: 100%;
+    height: auto;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    #certificate {
+        width: 300px;
+        height: 210px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #studentName {
+        font-size: 12px;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    #beltImage {
+        width: 110px;
+        height: 8px;
+        display: block;
+        margin: 6px auto;
+    }
+
+    #dateText {
+        font-size: 9px;
+        margin-top: 77px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .botao-link {
+        font-size: medium;
+    }
+
+    .cadastro {
+        width: auto;
+    }
+
+    .cadastro-block {
+        flex-direction: column;
+        font-size: medium;
+        margin: 5px 0;
+
+    }
+
+    input,
+    select,
+    label {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .btn-gerar {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .footer-text,
+    .footer-icones {
+        font-size: small;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        z-index: 10;
+        border: 1px solid #444;
+    }
+
+    /* menu-hamburguer */
+    .menu-hamburguer {
+        display: flex;
+        margin: 30px 0;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburguer {
+        width: 30px;
+        height: 3px;
+        position: relative;
+    }
+
+    .hamburguer,
+    .hamburguer::before,
+    .hamburguer::after {
+        background-color: black;
+    }
+
+    .hamburguer::before,
+    .hamburguer::after {
+        content: '';
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        left: 0;
+    }
+
+    .hamburguer::before {
+        top: -8px;
+    }
+
+    .hamburguer::after {
+        top: 8px;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        padding: 20px;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+        transition: left 0.3s ease;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        margin: 20px 0;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .menu-fechar {
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu-aberto {
+        left: 0;
+    }
+
+    .navbar {
+        display: none;
+        /* Esconde a div */
+    }
+}

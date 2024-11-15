@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gerador de Certificados de Jiu-Jitsu</title>
+    <style>
+        #certificate {
+            background-image: url("img/fundo_kids_educando.png");
+        }
+    </style>
+</head>
+
+<body background-image="img/background.png" ;>
+
+    <div class="navbar">
+        <div class="links"><a href="index.html" class="botao-link">INÍCIO</a></div>
+        <div class="links"><a href="adultos.html" class="botao-link">ADULTOS</a></div>
+        <div class="links"><a href="kids.html" class="botao-link">KIDS</a></div>
+        <div class="links"><a href="educando.html" class="botao-link">EDUCANDO CAMPEÕES</a></div>
+    </div>
+
+    <div class="menu-hamburguer">
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="hamburguer"></span>
+        </div>
+        <nav class="menu" id="menu">
+            <div class="menu-fechar" id="menu-fechar">×</div>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="adultos.html">ADULTOS</a></li>
+                <li><a href="kids.html">KIDS</a></li>
+                <li><a href="educando.html">EDUCANDO CAMPEÕES</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+    <h1>Gerador de Certificados de Jiu-Jitsu</h1>
+
+    <!-- Formulário de entrada -->
+    <div  class="cadastro">
+        <img class="img-amostra" src="img/amostra.png" alt="">
+        <div id="belt"></div>
+    </div>
+
+
+    </div>
+
+    <!-- Scripts para captura e geração de PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-block">
+                <div class="footer-text">Criado e desenvolvido por Daniel de G. Carolino.© Todos os direitos reservados
+                    2024.
+                </div>
+                <div class="footer-text">
+                    <div class="footer-icones"><a class="whats"
+                            href="https://api.whatsapp.com/send/?phone=19996300297&text=Ol%C3%A1,%20gostaria%20de%20orcamento!&type=phone_number&app_absent=0"
+                            target="_blank"> <i class="footer-icones whats bi bi-whatsapp"></i>Whatsapp</a>
+                    </div>
+                    <div class="footer-icones linkdin">
+                        <a class="linkdin" href="https://www.linkedin.com/in/danielcarolino/" target="_blank">
+                            <i class="footer-icones linkdin bi bi-linkedin"></i>Linkdin
+                        </a>
+                    </div>
+                    <div class="footer-icones mail">
+                        <a class="mail" href="mailto:daniel.carolino@fatec.sp.gov.br" target="_blank">
+                            <i class="footer-icones mail bi bi-envelope-at"></i>Email
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

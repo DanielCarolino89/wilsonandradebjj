@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gerador de Certificados de Jiu-Jitsu</title>
+    <style>
+        #certificate {
+            background-image: url("img/adultos.png");
+        }
+    </style>
+</head>
+
+<body background-image="img/background.png" ;>
+
+    <div class="navbar">
+        <div class="links"><a href="index.html" class="botao-link">INÍCIO</a></div>
+        <div class="links"><a href="adultos.html" class="botao-link">ADULTOS</a></div>
+        <div class="links"><a href="kids.html" class="botao-link">KIDS</a></div>
+        <div class="links"><a href="educando.html" class="botao-link">EDUCANDO CAMPEÕES</a></div>
+    </div>
+
+    <div class="menu-hamburguer">
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="hamburguer"></span>
+        </div>
+        <nav class="menu" id="menu">
+            <div class="menu-fechar" id="menu-fechar">×</div>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="adultos.html">ADULTOS</a></li>
+                <li><a href="kids.html">KIDS</a></li>
+                <li><a href="educando.html">EDUCANDO CAMPEÕES</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+    <h1>Gerador de Certificados de Jiu-Jitsu</h1>
+
+    <!-- Formulário de entrada -->
+    <div class="cadastro">
+
+        <div class="cadastro-block">
+            <div class="cadastro-input">
+                <label for="name">Nome do Aluno:</label>
+            </div>
+
+            <div class="cadastro-input">
+                <input type="text" id="name" placeholder="Digite o nome do aluno" style="text-transform: uppercase;"
+                    oninput="updateName()" required>
+            </div>
+
+            <div class="cadastro-input">
+                <label for="belt">Cor da Faixa e Grau:</label>
+            </div>
+
+            <div class="cadastro-input">
+                <select id="belt" required>
+                    <option value="branca">Branca</option>
+                    <option value="branca_1º_Grau">Branca - 1º Grau</option>
+                    <option value="branca_2º_Grau">Branca - 2º Grau</option>
+                    <option value="branca_3º_Grau">Branca - 3º Grau</option>
+                    <option value="branca_4º_Grau">Branca - 4º Grau</option>
+
+                    <option value="cinza">Cinza</option>
+                    <option value="cinza_1º_Grau">Cinza - 1º Grau</option>
+                    <option value="cinza_2º_Grau">Cinza - 2º Grau</option>
+                    <option value="cinza_3º_Grau">Cinza - 3º Grau</option>
+                    <option value="cinza_4º_Grau">Cinza - 4º Grau</option>
+
+                    <option value="amarela">Amarela</option>
+                    <option value="amarela_1º_Grau">Amarela - 1º Grau</option>
+                    <option value="amarela_2º_Grau">Amarela - 2º Grau</option>
+                    <option value="amarela_3º_Grau">Amarela - 3º Grau</option>
+                    <option value="amarela_4º_Grau">Amarela - 4º Grau</option>
+
+                    <option value="laranja">Laranja</option>
+                    <option value="laranja_1º_Grau">Laranja - 1º Grau</option>
+                    <option value="laranja_2º_Grau">Laranja - 2º Grau</option>
+                    <option value="laranja_3º_Grau">Laranja - 3º Grau</option>
+                    <option value="laranja_4º_Grau">Laranja - 4º Grau</option>
+
+                    <option value="verde">Verde</option>
+                    <option value="verde_1º_Grau">Verde - 1º Grau</option>
+                    <option value="verde_2º_Grau">Verde - 2º Grau</option>
+                    <option value="verde_3º_Grau">Verde - 3º Grau</option>
+                    <option value="verde_4º_Grau">Verde - 4º Grau</option>
+
+                    <option value="azul">Azul</option>
+                    <option value="azul_1º_Grau">Azul - 1º Grau</option>
+                    <option value="azul_2º_Grau">Azul - 2º Grau</option>
+                    <option value="azul_3º_Grau">Azul - 3º Grau</option>
+                    <option value="azul_4º_Grau">Azul - 4º Grau</option>
+
+                    <option value="roxa">Roxa</option>
+                    <option value="roxa_1º_Grau">Roxa - 1º Grau</option>
+                    <option value="roxa_2º_Grau">Roxa - 2º Grau</option>
+                    <option value="roxa_3º_Grau">Roxa - 3º Grau</option>
+                    <option value="roxa_4º_Grau">Roxa - 4º Grau</option>
+
+                    <option value="marrom">Marrom</option>
+                    <option value="marrom_1º_Grau">Marrom - 1º Grau</option>
+                    <option value="marrom_2º_Grau">Marrom - 2º Grau</option>
+                    <option value="marrom_3º_Grau">Marrom - 3º Grau</option>
+                    <option value="marrom_4º_Grau">Marrom - 4º Grau</option>
+
+                    <option value="preta">Preta</option>
+                    <option value="preta_1º_Grau">Preta - 1º Dam</option>
+                    <option value="preta_2º_Grau">Preta - 2º Dam</option>
+                    <option value="preta_3º_Grau">Preta - 3º Dam</option>
+                    <option value="preta_4º_Grau">Preta - 4º Dam</option>
+                </select>
+
+            </div>
+
+        </div>
+        <div class="cadastro-block">
+
+            <div class="cadastro-input">
+                <label for="dia">Dia:</label>
+            </div>
+
+            <div class="cadastro-input">
+                <select id="dia" name="dia" oninput="generateDate()" required>
+                    <option value="">Selecione um dia</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+
+            <div class="cadastro-input">
+                <label for="mes">Mês:</label>
+            </div>
+            <div class="cadastro-input">
+                <select id="mes" name="mes" oninput="generateDate()" required>
+                    <option value="">Selecione um mês</option>
+                    <option value="Janeiro">Janeiro</option>
+                    <option value="Fevereiro">Fevereiro</option>
+                    <option value="Março">Março</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Maio">Maio</option>
+                    <option value="Junho">Junho</option>
+                    <option value="Julho">Julho</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Setembro">Setembro</option>
+                    <option value="Outubro">Outubro</option>
+                    <option value="Novembro">Novembro</option>
+                    <option value="Dezembro">Dezembro</option>
+                </select>
+            </div>
+
+            <div class="cadastro-input">
+                <label for="ano">Ano:</label>
+            </div>
+            <div class="cadastro-input">
+                <select id="ano" name="ano" oninput="generateDate()" required>
+                    <option value="">Selecione um ano</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2034">2034</option>
+                    <option value="2035">2035</option>
+                    <option value="2036">2036</option>
+                    <option value="2037">2037</option>
+                    <option value="2038">2038</option>
+                    <option value="2039">2039</option>
+                    <option value="2040">2040</option>
+                    <option value="2041">2041</option>
+                    <option value="2042">2042</option>
+                    <option value="2043">2043</option>
+                    <option value="2044">2044</option>
+                    <option value="2045">2045</option>
+                    <option value="2046">2046</option>
+                    <option value="2047">2047</option>
+                    <option value="2048">2048</option>
+                    <option value="2049">2049</option>
+                    <option value="2050">2050</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="cadastro-block">
+            <div class="cadastro-input">
+                <button class="btn-gerar" onclick="generateCertificate()">Gerar Certificado</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visualização do Certificado -->
+    <div id="certificate">
+        <!-- Nome do aluno -->
+        <div class="certificate-block" id="studentName">Nome do aluno</div>
+
+        <!-- Imagem da Faixa -->
+        <div class="certificate-block"> <img id="beltImage" src="img/faixaazul0.png" width="100%" height="100%" alt="Faixa"></div>
+
+        <!-- Data -->
+        <div class="certificate-block" id="dateText">Rio Claro, 01 de Janeiro de 2050.</div>
+
+    </div>
+
+    <!-- Scripts para captura e geração de PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-block">
+                <div class="footer-text">Criado e desenvolvido por Daniel de G. Carolino.© Todos os direitos reservados
+                    2024.
+                </div>
+                <div class="footer-text">
+                    <div class="footer-icones"><a class="whats"
+                            href="https://api.whatsapp.com/send/?phone=19996300297&text=Ol%C3%A1,%20gostaria%20de%20orcamento!&type=phone_number&app_absent=0"
+                            target="_blank"> <i class="footer-icones whats bi bi-whatsapp"></i>Whatsapp</a>
+                    </div>
+                    <div class="footer-icones linkdin">
+                        <a class="linkdin" href="https://www.linkedin.com/in/danielcarolino/" target="_blank">
+                            <i class="footer-icones linkdin bi bi-linkedin"></i>Linkdin
+                        </a>
+                    </div>
+                    <div class="footer-icones mail">
+                        <a class="mail" href="mailto:daniel.carolino@fatec.sp.gov.br" target="_blank">
+                            <i class="footer-icones mail bi bi-envelope-at"></i>Email
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
