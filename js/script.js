@@ -85,7 +85,9 @@ function generateDate() {
 }
 
 function generateCertificate() {
-
+    // Obtém o nome do formulário
+        const name = document.getElementById("name").value;
+    
     // Atualiza o nome, faixa e data no certificado
     updateName();
     updateBeltImage();
