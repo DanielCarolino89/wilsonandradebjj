@@ -28,16 +28,19 @@ body {
 
 }
 
-#certificate {
-    width: 800px;
-    height: 563px;
-    text-align: center;
-    position: relative;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+.certificate {
+    width: 845px;
+    height: 595px;
+    border: 2px solid black;
     margin-top: 30px;
-    overflow: hidden;
+    background-image: url("../img/certificado_background.png");
+    background-size: 850px 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 h1 {
@@ -47,26 +50,58 @@ h1 {
 }
 
 #studentName {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
-    margin-top: 220px;
-    overflow: hidden;
     text-align: center;
+    margin-top: 30px;
 }
 
 #beltImage {
-    width: 380px;
-    height: 30px;
-    margin-top: 5px;
-    overflow: hidden;
+    width: 300px;
 }
 
 #dateText {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 205px;
-    overflow: hidden;
+}
+
+table {
+    width: 810px;
+}
+
+.img_titulo {
+    width: 500px;
+    padding: 0 30px;
+}
+
+.img_center {
+    width: 130px;
+}
+
+.img_bottom {
+    width: 140px;
+}
+
+.img_ass {
+    width: 300px;
+    height: auto;
+    margin-top: 80px;
+
+}
+
+.texto {
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
+}
+
+.texto span {
+    color: #f50e05;
+    font-style: italic;
+}
+
+table {
+    max-width: 800px;
 }
 
 .botao-link {
@@ -83,7 +118,7 @@ h1 {
     padding: 10px 20px;
     background-color: #f3d781;
     border: #daa520 solid 2px;
-    color:#2b2d42 ;
+    color: #2b2d42;
     text-align: center;
     text-decoration: solid 2px black;
     border-radius: 5px;
@@ -225,30 +260,61 @@ select {
 }
 
 @media (max-width: 1024px) {
-    #certificate {
-        width: 300px;
-        height: 210px;
-        overflow: hidden;
-        position: relative;
+
+    td{
+        border: 1px solid red;
+    }
+    .certificate {
+        width: 90%;
+        height: auto;
+        background-size: 100% auto;
+        
     }
 
     #studentName {
-        font-size: 12px;
-        margin-top: 80px;
-        text-align: center;
+        font-size: 10px;
     }
 
     #beltImage {
-        width: 110px;
-        height: 8px;
-        display: block;
-        margin: 6px auto;
+        width: 100px;
+    }
+
+    table {
+        width: 80%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .img_titulo {
+        width: 150px;
+        padding: 0 5px;
+    }
+    
+    .img_center {
+        width: 50px;
+    }
+    
+    .img_bottom {
+        width: 60px;
+    }
+    
+    .img_ass {
+        width: 100px;
+        margin-top: 30px
+    }
+    
+    .texto {
+        font-size: 8px;
+    }
+
+    .texto-rec{
+        font-size: 5px;
     }
 
     #dateText {
-        font-size: 9px;
-        margin-top: 77px;
-        text-align: center;
+        font-size: 8px;
     }
 
     h1 {

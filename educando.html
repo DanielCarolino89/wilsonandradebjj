@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Gerador de Certificados de Jiu-Jitsu</title>
-    <style>
-        #certificate {
-            background-image: url("img/fundo_kids_educando.png");
-        }
-    </style>
 </head>
 
 <body background-image="img/claro.jpg" ;>
@@ -49,8 +44,7 @@
             </div>
 
             <div class="cadastro-input">
-                <input type="text" id="name" placeholder="Digite o nome do aluno"
-                    oninput="updateName()" required>
+                <input type="text" id="name" placeholder="Digite o nome do aluno" oninput="updateName()" required>
             </div>
 
             <div class="cadastro-input">
@@ -65,24 +59,32 @@
                     <option value="branca_3º_Grau">Branca - 3º Grau</option>
                     <option value="branca_4º_Grau">Branca - 4º Grau</option>
 
+                    <option value="cinza_branca">Cinza e Branca</option>
+                    <option value="cinza_preta">Cinza e Preta</option>
                     <option value="cinza">Cinza</option>
                     <option value="cinza_1º_Grau">Cinza - 1º Grau</option>
                     <option value="cinza_2º_Grau">Cinza - 2º Grau</option>
                     <option value="cinza_3º_Grau">Cinza - 3º Grau</option>
                     <option value="cinza_4º_Grau">Cinza - 4º Grau</option>
 
+                    <option value="amarela_branca">Amarela Branca</option>
+                    <option value="amarela_preta">Amarela e Preta</option>
                     <option value="amarela">Amarela</option>
                     <option value="amarela_1º_Grau">Amarela - 1º Grau</option>
                     <option value="amarela_2º_Grau">Amarela - 2º Grau</option>
                     <option value="amarela_3º_Grau">Amarela - 3º Grau</option>
                     <option value="amarela_4º_Grau">Amarela - 4º Grau</option>
 
+                    <option value="laranja_branca">Laranja e Branca</option>
+                    <option value="laranja_preta">Laranja e Preta</option>
                     <option value="laranja">Laranja</option>
                     <option value="laranja_1º_Grau">Laranja - 1º Grau</option>
                     <option value="laranja_2º_Grau">Laranja - 2º Grau</option>
                     <option value="laranja_3º_Grau">Laranja - 3º Grau</option>
                     <option value="laranja_4º_Grau">Laranja - 4º Grau</option>
 
+                    <option value="verde_branca">Verde e Branca</option>
+                    <option value="verde_preta">Verde e Preta</option>
                     <option value="verde">Verde</option>
                     <option value="verde_1º_Grau">Verde - 1º Grau</option>
                     <option value="verde_2º_Grau">Verde - 2º Grau</option>
@@ -226,15 +228,59 @@
     </div>
 
     <!-- Visualização do Certificado -->
-    <div id="certificate">
-        <!-- Nome do aluno -->
-        <div class="certificate-block" id="studentName">Nome do aluno</div>
+    <div id="certificate" class="certificate">
+        <table>
+            <tr>
+                <!-- Imagem do título -->
+                <td colspan="3">
+                    <img class="img_titulo" src="img/certificado_titulo.png">
+                </td>
+            <tr>
+                <!-- Imagem kids -->
+                <td>
+                    <img class="img_center" src="img/certificado_kids.png">
 
-        <!-- Imagem da Faixa -->
-        <div class="certificate-block"> <img id="beltImage" src="img/faixaazul0.png" width="100%" height="100%" alt="Faixa"></div>
+                </td>
+                <!-- Nome do aluno -->
+                <td>
+                    <div class="texto-rec"><b>Reconhecemos que o aluno</b></div>
+                    <div id="studentName">Nome do aluno</div>
+                    <div><img id="beltImage" src="img/branca.png"></div>
 
-        <!-- Data -->
-        <div class="certificate-block" id="dateText">Rio Claro, 01 de Janeiro de 2050.</div>
+                </td>
+                <!-- Imagem educando -->
+                <td>
+                    <img class="img_center" src="img/certificado_educando.png">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div class="texto">"A vitória vem para aqueles que <span> não desistem de lutar"</span></div>
+                </td>
+            </tr>
+            <tr>
+                <!-- Imagem Wilson Andrade -->
+                <td>
+                    <img class="img_bottom" src="img/certificado_wilsonandrade.png">
+
+                </td>
+                <!-- Nome do Professor -->
+                <td class="td_ass">
+                    <img src="img/certificado_assinatura.png" class="img_ass">
+
+                </td>
+                <!-- Imagem Equipe Andrade -->
+                <td>
+                    <img class="img_bottom" src="img/certificado_equipeandrade.png">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div id="dateText">Rio Claro, 01 de Janeiro de 2025.</div>
+                </td>
+            </tr>
+        </table>
+    </div>
 
     </div>
 
