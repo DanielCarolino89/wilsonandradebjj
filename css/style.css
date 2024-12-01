@@ -3,11 +3,8 @@
 
 body {
     background-image: url("../img/claro.jpg");
-    /* Caminho da sua imagem */
     background-size: cover;
-    /* A imagem irá cobrir toda a tela */
     background-position: center;
-    /* Centraliza a imagem de fundo */
     background-repeat: none;
     margin: 0;
     height: 100%;
