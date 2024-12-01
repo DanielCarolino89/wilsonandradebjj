@@ -77,6 +77,8 @@ function updateName() {
 
     // Atualiza o certificado com o nome
     document.getElementById("studentName").innerText = name;
+
+    return name;
 }
 
 function generateDate() {
@@ -95,7 +97,7 @@ function generateDate() {
 function generateCertificate() {
 
     // Atualiza o nome, faixa e data no certificado
-    updateName();
+    const studentName = updateName();
     updateBeltImage();
     generateDate();
 
@@ -121,7 +123,7 @@ function generateCertificate() {
         pdf.addImage(imgData, "PNG", (pageWidth - imgScaledWidth) / 2, (pageHeight - imgScaledHeight) / 2, imgScaledWidth, imgScaledHeight);
 
         // Salva o PDF com o nome do aluno
-        pdf.save(`certificado_${name}.pdf`);
+        pdf.save(`certificado_${studentName}.pdf`);
     });
 }
 
